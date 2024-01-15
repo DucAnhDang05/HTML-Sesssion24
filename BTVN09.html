@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findGCD(a, b) {
+                while (b !== 0) {
+                    let temp = b;
+                    b = a % b;
+                    a = temp;
+                }
+                return a;
+        }
+        let a = +prompt("Nhap vao so a");
+        let b = +prompt("Nhap vao so b");
+        let c = +prompt("Nhap vao so c");
+        let d = +prompt("Nhap vao so d");
+
+        let uclnAB = findGCD(a,b);
+        uclnABC = findGCD(uclnAB,c);
+        uclnABCD = findGCD(uclnABC, d);
+        console.log("Ước chung lớn nhất là: "+uclnABCD );
+    </script>
+</body>
+</html>

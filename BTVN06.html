@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = +prompt("Nhap vao mot so n bat ky");
+        let reversedNumber = 0;
+
+        while (n > 0) {
+            reversedNumber = reversedNumber * 10 + n % 10;
+            n = Math.floor(n / 10);
+        }
+
+        console.log("So dao nguoc: " + reversedNumber);
+    </script>
+
+</body>
+</html>

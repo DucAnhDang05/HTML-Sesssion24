@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Nhap vao so a");
+        let b = +prompt("Nhap vao so b");
+        let tong =0;
+        if(a>b){
+            for (let i = b; i <= a; i++) {
+                tong += i;
+            }
+        }else{
+            for (let i = a; i <= b; i++) {
+                tong+=i;
+            }
+        }
+        console.log("Tong cac so la: " + tong);
+    </script>
+</body>
+</html>
